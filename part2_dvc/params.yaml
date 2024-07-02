@@ -1,0 +1,10 @@
+# params.yaml
+index_col: 'flat_id'
+target_col: 'price'
+one_hot_drop: 'if_binary'
+#auto_class_weights: 'Balanced'
+penalty: 'l2'
+C: 1
+n_splits: 5
+metrics: 'neg_mean_absolute_percentage_error'
+n_jobs: -1
