@@ -2,7 +2,7 @@ from airflow.providers.telegram.hooks.telegram import TelegramHook # импор�
 
 def send_telegram_success_message(context): # на вход принимаем словарь со контекстными переменными
     hook = TelegramHook(telegram_conn_id='test',
-                        token='7275811962:AAEn5Z--eOQ7Khc-ks_QPBb7rMnHWjDMTXk',
+                        token='',
                         chat_id='-4252997208')
     dag = context['dag']
     run_id = context['run_id']
